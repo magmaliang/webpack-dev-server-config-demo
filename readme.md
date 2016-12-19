@@ -5,10 +5,7 @@ webpack将资源打包输出到硬盘上，而webpack-dev-server将结果资源�
 ```javascript
 .
 |____assets
-|   |____archives
-|   |____home.js
-|   |____page.js
-|   |____sidebar.js
+|   |____progress.js
 |   |____main.js
 |____loader.js
 |____index.html
@@ -52,4 +49,10 @@ module.exports = {
 当使用webpack-dev-server启动时，所有资源会打包输出到内存，并绑定到devServer描述的端口上。这里需要特别注意的是**publicPath**,当此值被设置时，所有webpack输出的资源在访问时都需要通过此前缀路径。在上面的例子中，我们输出的main.bundle.js正确的访问路径是**localhost:9998/public/main.bundle.js**。
 
 ## demo
-我基于上面的结构写了一个demo:
+我基于上面的结构写了一个demo:[https://github.com/magmaliang/webpack-dev-server-config-demo](https://github.com/magmaliang/webpack-dev-server-config-demo)
+
+在此仓库根目录下依次使用以下命令即可运行demo:
+```javascript
+npm install;
+npm start;
+```
